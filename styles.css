@@ -1,0 +1,129 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  h1 {
+    text-align: left;
+  }
+
+  .search-container {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  
+  .employee-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .employee-card {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    overflow: visible;
+    margin: 10px 0;
+    width: calc(33.33% - 20px);
+    
+    cursor: pointer;
+  }
+  
+  .employee-card img {
+    width: auto;
+    border-radius: 50%;
+    align-self: center;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;  
+  }
+   
+.employee-card img:hover {
+  transform: rotate(10deg) scale(1.1);  
+}
+
+  .employee-card .employee-info {
+    padding: 10px;
+
+  }
+
+  .employee-info {
+width: auto;
+
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    width: 400px;
+    display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+
+  }
+
+  .modal-body {
+    text-align: center; 
+  }
+  
+  .close {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 25px;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .modal-nav {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #modal-prev {
+    float: left;
+  }
+  
+  #modal-next {
+    float: right;
+  }
+  
+  
